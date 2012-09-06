@@ -11,7 +11,6 @@ package controller;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
  
 @Controller
 public class IndexController {
@@ -21,9 +20,9 @@ public class IndexController {
         this.viewName = viewName;
     }
 
-    @RequestMapping("/index")
+    @RequestMapping("/index.htm")
     public ModelAndView Index(){
-        String message = "Hello World, Spring 3.0!";
+        String message = "S3 User Management";
         return new ModelAndView("index", "message", message);
     }
     

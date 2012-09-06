@@ -28,6 +28,8 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
+                <prop key="register.htm">registerController</prop>
+                <prop key="login.htm">loginController</prop>
             </props>
         </property>
     </bean>
@@ -43,9 +45,25 @@
     <!-- <bean name="indexController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" /> -->
-    
     <bean name="indexController"
           class="controller.IndexController"
           p:viewName="index" />
-    
+    <bean name="registerController"
+          class="controller.RegisterController" 
+          p:viewName="register" />
+    <bean name="loginController"
+          class="controller.LoginController" 
+          p:viewName="login" />
+    <bean name="registerValidator"
+          class="validator.RegisterValidator" />
+    <bean name="loginValidator"
+          class="validator.LoginValidator" />
+    <bean name="user"
+          class="model.User" />
+    <bean name="awsuser"
+          class="model.AWSUser" />
+    <bean id="messageSource" 
+          class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="resources/User" />
+    </bean>    
 </beans>

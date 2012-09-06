@@ -5,9 +5,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Home</title>
     </head>
     <body>
-        <h1>Message : ${message}</h1>	
+        <p align="right"><a href="login.htm">Login</a>&nbsp;|&nbsp;<a href="register.htm">Register</a>&nbsp;&nbsp;&nbsp;</p>
+        <h1>${message}</h1>	
+        <p><i>Don't get a shock, but this page is still unformatted. Functionality was more important than design. ;-)</i></p>
+        <p><b>Please click on Login or Register.</b></p>
     </body>
 </html>
