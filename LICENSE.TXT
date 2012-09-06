@@ -1,0 +1,3 @@
+As far as there isnn't another license specified for this project, the source code belongs to DESY / HTW-Berlin.
+DESY and HTW-Berlin are non-profit organizations. The license type still isn't known. It's a study project.
+More info: s0525775@htw-berlin.de
